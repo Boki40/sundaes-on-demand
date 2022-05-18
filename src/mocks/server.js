@@ -1,5 +1,5 @@
 //setup mock node server
-import { setupServer } from "msv/node";
+import { setupServer } from "msw/node";
 import { handlers } from "./handlers";
 
 //This configures a request mocking server with the given request handlers.
