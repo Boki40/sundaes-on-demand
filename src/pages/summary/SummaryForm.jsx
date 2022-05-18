@@ -10,7 +10,11 @@ const popover = (
 const checkboxLabel = (
   <span>
     I agree to the
-    <OverlayTrigger trigger="hover" placement="right" overlay={popover}>
+    <OverlayTrigger
+      trigger={["hover", "focus"]}
+      placement="right"
+      overlay={popover}
+    >
       <span style={{ color: "blue" }}> terms and conditions</span>
     </OverlayTrigger>
   </span>
